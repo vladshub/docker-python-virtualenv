@@ -8,7 +8,7 @@ RUN apk add --update \
     py-pip \
     build-base \
     git \
-    openssl \
+    openssl-dev \
     py-lxml \
   && pip install --upgrade pip \
   && pip install virtualenv \
