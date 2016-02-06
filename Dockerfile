@@ -8,6 +8,8 @@ RUN apk add --update \
     py-pip \
     build-base \
     git \
+    openssl \
+    py-lxml \
   && pip install --upgrade pip \
   && pip install virtualenv \
   && rm -rf /var/cache/apk/*
