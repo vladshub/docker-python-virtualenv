@@ -10,6 +10,9 @@ RUN apk add --update \
     git \
     openssl-dev \
     libxml2-dev \
+    libxslt \
+    libxslt-dev \
+    py-libxslt \
     py-libxml2 \
     py-lxml \
   && pip install --upgrade pip \
