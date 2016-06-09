@@ -2,7 +2,7 @@ FROM alpine
 MAINTAINER Vladislav Shub <vlad6il@gmail.com>
 
 ENV PYTHONIOENCODING utf-8
-RUN apk add --update \
+RUN apk add --no-cache --update \
     python \
     python-dev \
     py-pip \
@@ -15,6 +15,7 @@ RUN apk add --update \
     py-libxslt \
     py-libxml2 \
     py-lxml \
+    libssl1.0 \
   && pip install --upgrade pip \
   && pip install virtualenv \
   && rm -rf /var/cache/apk/*
