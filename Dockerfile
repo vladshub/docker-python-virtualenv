@@ -17,6 +17,7 @@ RUN apk add --no-cache --update \
     py-lxml \
     libssl1.0 \
     ca-certificates \
+    wget \
   && pip install --upgrade pip \
   && pip install virtualenv \
   && update-ca-certificates \
